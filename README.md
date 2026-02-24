@@ -4,7 +4,9 @@
 [![Minimum Node.js version](https://badgen.net/npm/node/@yerofey/cryptowallet-cli)](https://npmjs.com/@yerofey/cryptowallet-cli)
 [![NPM package version](https://badgen.net/npm/v/@yerofey/cryptowallet-cli)](https://npmjs.com/package/@yerofey/cryptowallet-cli)
 
-> cw: crypto wallet generator CLI tool
+> cw: crypto wallet generator CLI tool + Web UI
+
+This project includes both a command-line interface and a modern web interface for generating cryptocurrency wallets.
 
 ![Screenshot](https://i.imgur.com/uWuT4lF.png)
 
@@ -34,7 +36,47 @@
 
 *check the Options section for all supported commands*
 
-## Install
+## Web UI
+
+A modern web interface has been added for generating wallets. Perfect for classroom environments and teams that prefer a graphical interface.
+
+### Features
+- **Batch Generation**: Generate up to 100 wallets at once
+- **Multiple Blockchains**: Support for 30+ cryptocurrencies (BTC, ETH, SOL, TON, etc.)
+- **CSV/TXT Export**: Export generated wallets to CSV or TXT format
+- **Copy to Clipboard**: Quick copy functionality for wallet addresses
+- **Custom Mnemonics**: Import your own BIP39 mnemonics or generate new ones
+- **Address Formats**: Support for multiple address formats per blockchain (e.g., Bitcoin's legacy, segwit, bech32)
+
+### Running the Web UI
+
+```bash
+# Install dependencies
+npm install
+# or
+pnpm install
+
+# Start development server
+npm run dev
+# or
+pnpm dev
+
+# Open http://localhost:3000 in your browser
+```
+
+### Building for Production
+
+```bash
+npm run build
+npm start
+# or
+pnpm build
+pnpm start
+```
+
+The web UI is built with Next.js, React, and Tailwind CSS, making it easy to deploy to Vercel or any Node.js hosting platform.
+
+## Install (CLI)
 
 ```bash
 # via npm
