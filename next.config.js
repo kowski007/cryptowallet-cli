@@ -2,10 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  // Allow importing from src directory
-  webpack: (config) => {
-    return config;
-  },
+  turbopack: {},
 };
 
 export default nextConfig;
